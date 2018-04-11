@@ -23,6 +23,9 @@ private Button startGame;
 private Button swapSides;
 private Label  whosNext;
 
+/*
+ * This is the GameGUI method;*/
+
 GameGUI( GameControler g, AdapterPlayer pl ) {
   gc = g;
   thePlayer = pl;
@@ -113,10 +116,12 @@ GameGUI( GameControler g, AdapterPlayer pl ) {
   setVisible( true );
 }
 
+/**this is the enableMove method;*/
 void enableMove() {
   setEnabledMoveButtons( true );
 }
 
+/**this is the state Changed method;*/
 public void stateChanged( ObservableBoard b ) {
   Position pos = b.currentPosition();
   for( int c = 1; c<=7; c++ ) {

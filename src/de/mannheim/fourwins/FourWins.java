@@ -1,5 +1,8 @@
 package de.mannheim.fourwins;
 
+/**This is my comment; It is written by me;
+ * */
+
 public class FourWins
 {
   public static void main(String argv[]) {
